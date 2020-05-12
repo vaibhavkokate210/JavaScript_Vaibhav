@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+</head>
+<body>
+    <button onclick="changeOrder()">Asending Order</button>
+       <p id="as"></p>
+       <script>
+           let pot=["akash","vaibhav","suraj","moshin","saurabh","rohit"];
+           document.getElementById("as").innerHTML=pot;
+
+           function changeOrder()
+           {
+               pot.sort();
+               pot.reverse();
+               document.getElementById("as").innerHTML=pot;
+           }
+       </script>
+</body>
+</html>
