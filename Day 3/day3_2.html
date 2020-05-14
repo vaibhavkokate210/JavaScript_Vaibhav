@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+    <h2>class account and method deposit</h2></br>
+    <p id="f"></p>
+    <script>
+         class Account
+         {
+               constructor(name,balance)
+               {
+                  this.name=name;
+                  this.balance=balance;
+               }
+               deposit(depo)
+               {
+                  this.balance=this.balance+depo;
+               }
+               display()
+               {
+                   return `${this.name} Having ${this.balance} in a account`;
+               }
+         }
+               myAccount=new Account("Vaibhav",1000);
+               myAccount.deposit(500);
+               console.log(myAccount.display()); 
+
+               myAccount1=new Account("Ajay",2000);
+               myAccount1.deposit(300);
+               console.log(myAccount1.display());   
+    </script>
+</body>
+</html>

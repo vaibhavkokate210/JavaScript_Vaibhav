@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+    <h2>Finding Square and cube using static method</h2></br>
+    <input type="text" id="numb"/>
+    <button type="button" 
+            onclick="Math.square(document.getElementById('numb').value);
+                     Math.cube(document.getElementById('numb').value)">Disply Square & Cube</button>
+    <h4 id="sq"></h4>
+    <h4 id="cb"></h4>
+    <script>
+        //let num=4;
+         class Math
+         {
+             static square(sqr)
+             {
+                this.sqr=sqr*sqr;
+                document.getElementById("sq").innerHTML=`Square =${this.sqr}`;
+             }
+             static cube(cub)
+             {
+                 this.cub=cub*cub*cub;
+                 document.getElementById("cb").innerHTML=`Cube =${this.cub}`;
+             }
+         }
+               //const squareResult=Math.square(num);
+              // console.log(squareResult); 
+
+               //const cubeResult=Math.cube(num);
+               //console.log(cubeResult);   
+    </script>
+</body>
+</html>

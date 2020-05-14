@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+    <h2>Finding factorial using Arrow function</h2></br>
+    <input type="text" id="no"/>
+    <button onclick="print(document.getElementById('no').value)">factorial</button>
+    <p id="f"></p>
+    <script>
+        let print=(num)=>{
+        //let num=4;
+        let fact=1;
+        for(let i=num;i>0;i--)
+        {
+            fact=fact*i;
+        }
+        console.log(fact);
+        document.getElementById("f").innerHTML=`Factorial of ${num}=${fact}`;
+        }
+    </script>
+</body>
+</html>
