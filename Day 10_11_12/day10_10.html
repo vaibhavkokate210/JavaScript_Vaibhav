@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 10(10)</title>
+</head>
+<body>
+    <textarea id = "demo" onchange="change()"></textarea>
+    <span id ="spn"></span>
+    <script>
+         function change() {
+             
+             var txt = document.getElementById("demo").value;
+             console.log(txt);
+             if(txt.length == 0){
+                 document.getElementById("spn").innerHTML ="Error.....!!!Please enter something";
+             }
+             else{
+                 document.getElementById("spn").innerHTML =txt;
+             }
+         }
+    </script>
+</body>
+</html>

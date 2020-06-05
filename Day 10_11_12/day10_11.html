@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 10(11)</title>
+</head>
+<body>
+     <textarea id="demo" onchange="change()"></textarea>
+     <span style="color:red" id="spn"></span>
+    <script>
+            function change() {
+                var txt = document.getElementById("demo").value;
+                console.log(txt);
+                var uppercase = /[A-Z]/g;
+                var number = /[0-9]/g;
+                var symbol = /[@$]/g;
+                if(!txt.match(uppercase)) {
+                    document.getElementById("spn").innerHTML ="Please enter atleast one upperCase letter";
+                }
+                else if(!txt.match(number)){
+                    document.getElementById("spn").innerHTML ="please enter atlest one number";
+                }
+                else if(!txt.match(symbol)){
+                    document.getElementById("spn").innerHTML = "please enter special symbol";
+                }
+                else{
+                    document.getElementById("spn").innerHTML = "Right password";
+                }
+            }
+    </script>
+</body>
+</html>

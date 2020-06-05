@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 10(12)</title>
+</head>
+<body>
+<div onclick="disp()">
+    <input type="checkbox" value="100">C [RS = 100]</br>
+    <input type="checkbox" value="200">c++ [RS = 200]</br>
+    <input type="checkbox" value="300">Java [RS = 300]</br>
+</div>
+   Total price : <input type="text" id="demo">
+
+       <script>
+           function disp() {
+            var total=0;
+            var chk = document.getElementsByTagName("input");
+            var leng = chk.length;
+            for(var i=0; i<leng; i++){
+                if(chk[i].checked==true){
+                    total +=Number(chk[i].value);
+                }
+               
+            }
+            document.getElementById("demo").value = total;
+
+         }
+      </script>
+</body>
+</html>

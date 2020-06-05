@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 10(4)</title>
+</head>
+<body>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label>Blue</label></br>
+    <input type="radio" id="red" name="color" value="red">
+    <label>Red</label></br>
+    <input type="radio" id="green" name="color" value="green">
+    <label>Green</label><br>
+     <input type ="text" id="ch" oninput="change()">
+    <script>
+        function change() {
+              var radios = document.getElementsByName("color");
+              //console.log(radios);
+              var val;
+              var leng = radios.length;
+              for(var i=0;i<leng;i++) {
+                  if(radios[i].checked) {
+                      val = radios[i].value ;
+                      break;
+                  }
+              }
+              document.getElementById("ch").style.borderColor = val;
+              console.log(val);
+        }
+    </script>
+</body>
+</html>

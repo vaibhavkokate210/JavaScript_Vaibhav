@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 10(7)</title>
+</head>
+<body>
+    <p>My name is Vaibhav Kokate. I am from Tasgaon which is in Sangli district.</p>
+    <p>About my education, I have completed my graduation from TKIET, Warananagar with 63 %. Also, I have completed my 10th and 12th from my city.</p>
+    <p>Currently, I am pursuing CDAC course from SM VITA, Mumbai.</p>
+    <h4 id="demo"></h4>
+    <button onclick="change()">Change</button>
+
+    <script>
+            function change() {
+                var pTags= document.querySelectorAll("p");
+                var count = pTags.length;
+                document.getElementById("demo").innerHTML = "There are total "+count+" p tags";
+                for(var i=0; i<count; i++)  {
+                    pTags[i].style.background = "blue";
+                }
+            }
+    </script>
+</body>
+</html>
