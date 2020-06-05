@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 15(1)</title>
+</head>
+<body>
+    <h1>Digital clock</h1>
+    <h2 id="demo"></h2>
+    <script>
+            var myvar=setInterval(timer,1000);
+            function timer() {
+                var d = new Date();
+               // console.log(d);
+               document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 15(4)</title>
+</head>
+<body>
+        <textarea id="demo"></textarea></br>
+        <p id="ch"></p>
+            <button onclick="create()">Create Cookie</button>
+            <button onclick="read()">Read cookie</button>
+    
+            <script>
+                    function create(){
+                        var a =document.getElementById("demo").value;
+                        document.cookie += a;
+
+                    }
+
+                    function read() {
+                        var b = document.cookie;
+                        document.getElementById("ch").innerHTML ="Cookie =" + b;
+                    }
+            </script>
+</body>
+</html>
