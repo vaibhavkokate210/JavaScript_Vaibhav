@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 8(1)</title>
+</head>
+<body>
+
+    <script>
+           class Employee {
+               constructor(id,name,salary) {
+                   this.id = id;
+                   this.name = name;
+                   this.salary = salary;
+               }
+               get _id() {
+                   return this.id;
+               }
+
+               set _id(x) {
+                   this.id = x;
+               }
+
+               get _name() {
+                   return this.name;
+               }
+
+               set _name(x) {
+                   this.name = x;
+               }
+
+               get _salary() {
+                   return this.salary;
+               }
+
+               set _salary(x) {
+                   this.salary = x;
+               }
+               netSalary() {
+                    this.netsalary = this.salary - (this.salary*0.01);         
+                    return this.netsalary;  
+               }
+           }
+          var emp1 = new Employee(01,"Vaibhav",100000);
+           var emp2 = new Employee(02,"Rohit",500000);
+           console.log(emp1.netSalary());
+           console.log(emp2.netSalary());
+    </script>
+</body>
+</html>

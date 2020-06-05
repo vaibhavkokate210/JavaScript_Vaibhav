@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 8(2)</title>
+</head>
+<body>
+    
+    <script>
+        class Student {
+            constructor(roll_no,name,m1,m2,m3)
+            {
+                this.roll_no = roll_no;
+                this.name = name;
+                this.m1 = m1 ;
+                this.m2 = m2;
+                this.m3 = m3;
+            }
+            get _roll_no() {
+                return this.roll_no;
+            }
+
+            set _roll_no(x) {
+                 this.roll_no = x;
+            }
+
+            get _name() {
+                return this.name;
+            }
+
+            set _name(x) {
+                 this.name = x;
+            }
+
+            get _m1() {
+                return this.m1;
+            }
+
+            set _m1(x) {
+                 this.m1 = x;
+            }
+
+            get _m2() {
+                return this.m2;
+            }
+
+            set _m2(x) {
+                 this.m2 = x;
+            }
+            
+            
+            get _m3() {
+                return this.m3;
+            }
+
+            set _m3(x) {
+                 this.m3 = x;
+            }
+
+            calculate(){
+                this.total = this.m1 + this.m2 + this.m3;
+                this.percent = (this.total/300)*100;
+                return this.percent;
+            }
+        }
+        var stud1 = new Student(01, "Vaibhav", 75, 68, 89);
+        var stud2 = new Student(02, "Rohit", 95, 48, 87);
+        console.log(stud1.name+" got "+stud1.calculate()+" percentage");
+        console.log(stud2.name+" got "+stud2.calculate()+" percentage");
+    </script>
+</body>
+</html>
