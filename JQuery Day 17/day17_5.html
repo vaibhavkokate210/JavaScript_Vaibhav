@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 17(5)</title>
+</head>
+<body>  
+        <input type="radio" name="color" value ="red">Red</br>
+        <input type="radio" name="color" value ="blue">Blue</br>
+        <input type="radio" name="color" value ="green">Green</br>
+        <input type="radio" name="color" value ="yellow">Yellow</br>
+        <textarea id="txt"></textarea>
+        <script src="js/jquery.js"></script>
+        <script>
+                $(document).ready(function(){
+                            $("input[type='radio']").click(function(){
+                                var a = $("input[type='radio']:checked").val();
+                                //alert(a);
+                                $("textarea").css("color",a);
+                            });
+                });
+        </script>
+</body>
+</html>

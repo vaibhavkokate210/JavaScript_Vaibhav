@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 17(3)</title>
+</head>
+<body>
+        <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+            <li>Dragon Fruit</li>
+            <li>Echi</li>
+        </ol>
+        <input type="radio" value="grapes">Grapes</br>
+        <input type="radio" value="watermellon">watermellon
+        <script src="js/jquery.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $("input[type='radio']").click(function(){
+                        var a = $("input[type='radio']:checked").val();
+                     //console.log(a);
+                       $("ol").append("<li>"+a+"</li>");
+
+                    });
+                });
+        </script>
+</body>
+</html>
